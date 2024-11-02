@@ -1,0 +1,45 @@
+/* GLOBAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+}
+
+.container{
+    box-sizing: border-box;
+    max-width: 1400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    margin: 0px;
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: var(--cor-0);
+  }
+  ul{
+    list-style: none;
+    padding: 0px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+  
+  
+  h1, h2, h3,h4, p, ul, blockquote, dd{
+    margin: 0px;
+  }
+  

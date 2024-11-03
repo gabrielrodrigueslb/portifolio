@@ -12,11 +12,14 @@ const textLoad = () => {
         text.textContent = "UX/UI Designer"
     }, 0);
     setTimeout(() =>{
-        text.textContent = "Desenvolvedor"
+        text.textContent = "Freelancer"
     }, 4000);
     setTimeout(() =>{
-        text.textContent = "Freelancer"
+        text.textContent = "Web Designer"
     }, 8000);
+    setTimeout(() =>{
+        text.textContent = "Programador"
+    }, 12000);
 }
 
 textLoad();

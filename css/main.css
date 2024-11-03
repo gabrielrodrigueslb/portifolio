@@ -29,6 +29,7 @@
 .digitacao{
     margin-bottom: 45px;
     align-items: center;
+    overflow: hidden;
 }
 
 .digitacao .texto{

@@ -1,5 +1,130 @@
-.hero{
+.hero-bg{
     background: url(../img/bg.jpg);
     height: 100vh;
-    padding-top: 100px;
+}
+
+.hero{
+    padding-top: 150px;
+    height: calc(100vh - 150px);
+    display: flex;
+}
+
+.main{
+    align-self: center;
+}
+
+.code{
+    font-family: "Roboto mono";
+    font-size: 1.5rem;
+    color: #01BBFF;
+    font-weight: bold;
+}
+
+.main h1{
+    font-size: 4.68rem;
+    margin-top: 10px;
+    line-height: 1;
+}
+
+.digitacao{
+    margin-bottom: 45px;
+    align-items: center;
+}
+
+.digitacao .texto{
+    font-size: 3.3rem;
+    color: #01BBFF;
+    font-weight: bold;
+    position: relative;
+}
+
+.digitacao .texto.first-text{
+    color:#AEAEAE;
+    padding-right: 10px;
+}
+.texto.sec-text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../img/bg.jpg);
+    border-left: 2px solid #AEAEAE;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: 100%;
+    }
+    10%{
+        left: 100%;
+    }
+}
+
+.main h2 span{
+    color: #01BBFF;
+}
+
+.main-text{
+    font-size: 1.25rem;
+    color: #AEAEAE;
+    max-width: 600px;
+}
+
+@media (max-width:700px) {
+    .digitacao .texto.first-text{
+        color:#AEAEAE;
+        padding-right: 5px;
+    }
+    
+    .main{
+        align-self: center;
+    }
+    
+    .code{
+        font-family: "Roboto mono";
+        font-size: 1rem;
+        color: #01BBFF;
+        font-weight: bold;
+    }
+
+    .main-text{
+        font-size: 1.1rem;
+        max-width: 450px;
+
+    }
+    
+    .main h1{
+        font-size: 2.98rem;
+        margin-top: 10px;
+        line-height: 1;
+    }
+    
+    .digitacao{
+        margin-bottom: 45px;
+    }
+    
+    .digitacao .texto{
+        font-size: 2.3rem;
+    } 
+}
+
+@media (max-width:400px){
+    .main h1{
+        font-size: 2.58rem;
+        margin-top: 10px;
+        line-height: 1;
+    }
+    
+    .digitacao .texto{
+        font-size: 2rem;
+    } 
+}
+
+@media (max-width:350px){
+    .digitacao .texto{
+        font-size: 1.8rem;
+    } 
 }

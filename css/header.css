@@ -84,7 +84,7 @@ header{
         top:0;
         left: 0;
         width: 100vw;
-        height: 50vh;
+        height: 55vh;
         background: #00010C;
         clip-path: circle(100px at 90% -25%);
         transition: 0.3s ease-in-out;

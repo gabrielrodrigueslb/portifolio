@@ -4,8 +4,9 @@
 }
 
 .hero{
-    padding-top: 150px;
-    height: calc(100vh - 150px);
+    
+    height: 100vh;
+    align-items: center;
     display: flex;
 }
 
@@ -54,7 +55,65 @@
     border-left: 2px solid #AEAEAE;
     animation: animate 4s steps(12) infinite;
 }
+.main h2 span{
+    color: #01BBFF;
+}
 
+.main-text{
+    font-size: 1.25rem;
+    color: #AEAEAE;
+    max-width: 600px;
+    margin-bottom: 60px;
+}
+
+.logo{
+    border: 3px solid #01BBFF;
+    border-radius: 50%;
+    padding: 8px;
+    transition: 0.3s;
+}
+.logo:hover{
+    fill: #FFF;
+}
+
+.logo:hover{
+    border: 3px solid #FFF;
+    transition: 0.3s;
+}
+
+.redes-btn{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.redes-cv{
+    border: 3px solid #01BBFF;
+    padding: 20px 60px;
+    font-weight: 300;
+    font-size: 1.25rem;
+    border-radius: 20px;
+    transition: 0.2s;
+    display: flex;
+    gap: 5px;
+}
+.redes-cv:hover{
+    border: 3px solid #fff;
+    transition: 0.2s;
+}
+
+.redes{
+    display: flex;
+    gap: 40px;
+}
+
+
+
+
+
+
+
+/* kEYFRAME */
 @keyframes animate{
     40%, 60%{
         left: 100%;
@@ -64,16 +123,8 @@
     }
 }
 
-.main h2 span{
-    color: #01BBFF;
-}
 
-.main-text{
-    font-size: 1.25rem;
-    color: #AEAEAE;
-    max-width: 600px;
-}
-
+/* MEDIA */
 @media (max-width:700px) {
     .digitacao .texto.first-text{
         color:#AEAEAE;
@@ -112,6 +163,19 @@
     } 
 }
 
+@media (max-width:550px){
+    .redes{
+        gap: 20px;
+    }
+    
+    .redes-cv{
+        padding: 20px 20px;
+        font-weight: 300;
+        font-size: 1.05rem;
+    }
+
+}
+
 @media (max-width:400px){
     .main h1{
         font-size: 2.58rem;
@@ -122,6 +186,11 @@
     .digitacao .texto{
         font-size: 2rem;
     } 
+
+    .logo{
+        width: 50px;
+        height: auto;
+    }
 }
 
 @media (max-width:350px){
